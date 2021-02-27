@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>TestServer</title>
+  </head>
+  <body>
+  <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+  </script>
+
+  <div class="btn-push" id="submit_btn" A HREF="https://nekotetsu.github.io/testModelViewer/index.html" >XSA関連</div>
+  <div class="btn-push" id="submit_btn" A HREF="https://nekotetsu.github.io/testModelViewer/ROSrobo.html" >ROSロボ</div>
+  <div class="btn-push" id="submit_btn" A HREF="https://nekotetsu.github.io/testModelViewer/other.html" >その他</div>
+  
+  <H1>ROSロボ</H1>
+    <model-viewer
+    ar
+    alt="ROSrobot"
+    src="./obj/ROS_GLB.glb"
+    ios-src="./obj/ROS_USDZ.usdz"
+    style="width:400px;height:500px;"
+
+    background-color="#70BCD1"
+    shadow-intensity="0.7"
+    camera-controls
+    interaction-prompt="auto"
+    auto-rotate ar magic-leap>
+    </model-viewer>
+
+  <H1>ROSロボ(内部構造)</H1>
+    <model-viewer
+    ar
+    alt="ROSrobot_open"
+    src="./obj/ROS_open_GLB.glb"
+    ios-src="./obj/ROS_open_USDZ.usdz"
+    style="width:400px;height:500px;"
+
+    background-color="#70BCD1"
+    shadow-intensity="0.7"
+    camera-controls
+    interaction-prompt="auto"
+    auto-rotate ar magic-leap>
+    </model-viewer>
+  </body>
+</html>
